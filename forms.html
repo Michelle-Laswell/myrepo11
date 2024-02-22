@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>HTML Forms (P)</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML practice">
+  <meta name="Keywords" content="HTML, CSS, JavaScript">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <meta name="author" content="Michelle Laswell">
+
+  <link rel="stylesheet" href="styles.css">
+  
+  
+</head>
+
+<body>
+
+<header id="learning">
+  <h1>Learning HTML Forms (P)</h1>
+</header>
+
+<nav class="navbar">
+  <a href="index.html" target="_self">HTML</a>
+  <a href="CSS.html" target="_self">CSS</a>
+  <a href="javascript.html" target="_self">Javascript</a>
+  <a class="active" href="forms.html" target="_self">HTML Forms</a>
+</nav>
+
+<section class="pagelinks">
+
+  <h2>HTML Forms</h2>
+  <p>An HTML form is used to collect user input.  The user input is most often sent
+     to a server for processing.  The HTML <span style="color:green;font-weight:bold;font-size:16px"><code>&lt;form&gt;</code></span> element 
+     is used to create an HTML form for user input. <br /> The HTML <span style="color:green;font-weight:bold;font-size:16px"><code>&lt;form&gt;</code></span> element 
+     is a container for different type of input elements.</p>
+  <p>We will go over each of the following types of Input Elements:</p>
+
+  <ul>
+    <li><a href="#input">Input Element</a></li>
+    <li><a href="#text">Text Fields</a></li>
+    <li><a href="#radio">Radio buttons</a></li>
+    <li><a href="#check">Checkboxes</a></li>
+    <li><a href="#drop">Drop-down List</a></li>
+    <li><a href="#submit">Submit Buttons</a></li>
+  </ul>
+
+<article class="content">
+  <h3 id="input">The <code class="codespan">&lt;input&gt;</code> Element</h3>
+  <p>The <code class="codespan">&lt;input&gt;</code> element is the most used form element. <br />
+     <br />An <code class="codespan">&lt;input&gt;</code> element can be displayed in may ways, depending on the <code class="codespan">&lt;type&gt;</code> attribute.</p>
+  <p>Here are some examples and their descriptions:</p>
+  
+  <figure>
+    <img src="images/input.jpg" alt="Input Elements" width="895" height="450" style="max-width:100%;height:auto;">
+    <figcaption>Fig.2 - Types of Input Elements and their descriptions</figcaption>
+  </figure>
+  <p><a href="#learning">Back to the top</a></p>
+</article>
+
+
+<article class="content">
+  <h3 id="text">Text Fields</h3>
+  <p>The <code class="codespan">&lt;input type="text"&gt;</code> defines a single-line input field for text input.</p>
+  <form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" value="Michelle"> <br />
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" value="Laswell">
+  </form>
+  <p><a href="#learning">Back to the top</a></p>
+
+</article>
+
+<article class="content">
+
+  <h3 id="radio">Radio Buttons</h3>
+  <p>The <code class="codespan">&lt;input type="radio"&gt;</code> defines a radio button.</p>
+  <p>Radio buttons let a user select ONE of a limited number of choices.</p>
+  <p><b>Which dance do you like best?</b></p>
+  <form>
+    <input type="radio" id="ecs" name="dance" value="east coast swing">
+    <label for="ecs">East Coast Swing</label><br />
+    <input type="radio" id="wcs" name="dance" value="west coast swing">
+    <label for="wcs">West Coast Swing</label><br />
+    <input type="radio" id="salsa" name="dance" value="salsa">
+    <label for="salsa">Salsa</label>
+  </form>
+  <p><a href="#learning">Back to the top</a></p>
+
+</article>
+
+<article class="content">
+  <h3 id="check">Checkboxes</h3>
+  <p>The  defines a <b>checkbox</b>.</p>
+  <p>Checkboxes let a user select ZERO or MORE options of a limted number of choices.</p>
+  <p><b>Which authors do you like?</b></p>
+  <form>
+    <input type="checkbox" id="author1" name="author1" value="JPatterson">
+    <label for="author1">James Patterson</label><br />
+    <input type="checkbox" id="author2" name="author2" value="RMcCammon>
+    <label for="author2">Robert McCammon</label><br />
+    <input type="checkbox" id="author3" name="author3" value="DBrown">
+    <label for="author3">Dan Brown</label><br />
+    <input type="checkbox" id="author4" name="author4" value="JGrisham">
+    <label for="author4">John Grisham</label><br />
+    <input type="checkbox" id="author5" name="author5" value="SKing">
+    <label for="author5">Stephen King</label>
+  </form>
+  <p><a href="#learning">Back to the top</a></p>
+
+</article>
+
+<article class="content">
+  <h3 id="drop">Drop-down List</h3>
+  <p>The <code class="codespan">&lt;select&gt;</code> element defines a drop-down list.</p>
+  <p>The <code class="codespan">&lt;option&gt;</code> element defines an option that can be selected.</p>
+  <p>To define a pre-selected option, add the <code class="codespan">selected</code> attribute to the option.</p>
+  <h4>EXAMPLE</h4>
+  <code class="codespan">&lt;label for="movies"&gt;Choose your favorite movies:&lt;/label&gt; <br />
+    &lt;select id="movies" name="movies"&gt; <br />
+          &lt;option value="jaws"&gt;Jaws&lt;/option&gt; <br />
+          &lt;option value="godfather"&gt;Godfather&lt;/option&gt; <br />
+          &lt;option value="Wizard of oz"&gt;Wizard of Oz&lt;/option&gt; <br />
+          &lt;option value="gone with the wind"&gt;Gone with the Winds&lt;/option&gt; <br />
+  </code>
+  <p><b>It would look like this:</b></p>
+    <label for="movie">Choose your favorite movie:</label>
+    <select id="movie" name="movie">
+          <option value="jaws">Jaws</option>
+          <option value="godfather">Godfather</option>
+          <option value="Wizard of oz">Wizard of Oz</option>
+          <option value="gone with the wind">Gone with the Winds</option>
+    </select>
+  
+
+</article>
+
+<article class="content">
+  <h3 id="submit">The Submit Button</h3>
+  <p>The <code class="codespan">&lt;input type="submit"&gt;</code> defines a button for submitting the form data to a form handler.</p>
+  <p>The form-handler is typically a file on the server with a script for processing input data.</p>
+  <p>The form-handler is specified in the form's <code class="codespan">action</code> attribute.</p>
+  <p>This is how the HTML code will be displayed in a browser:</p>  
+  <form action="file-name.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"> <br />
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname">
+    <input type="submit" value="Submit">
+  </form>
+  <p><a href="#learning">Back to the top</a></p>
+</article>
+
+<footer id="footer">
+ <address>
+  Designed by Michelle Laswell<br />
+  Visit us at:  <a href="mailto:mlaswell@hotmail.com">mlaswell@hotmail.com</a>
+ </address>
+</footer>
+
+</body>
+
+</html>
